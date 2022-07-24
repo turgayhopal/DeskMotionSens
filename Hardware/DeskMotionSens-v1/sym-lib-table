@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "ESP32-D0WDQ6")(type "Legacy")(uri "${KIPRJMOD}/Lib/ESP32-D0WDQ6.lib")(options "")(descr ""))
+  (lib (name "INMP441ACEZ")(type "Legacy")(uri "${KIPRJMOD}/Lib/INMP441ACEZ.lib")(options "")(descr ""))
+)
