@@ -1,0 +1,277 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "Device:Battery_Cell" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "BT" (id 0) (at 2.54 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "Battery_Cell" (id 1) (at 2.54 0 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (id 2) (at 0 1.524 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 1.524 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "battery cell" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Single-cell battery" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Battery_Cell_0_1"
+        (rectangle (start -2.286 1.778) (end 2.286 1.524)
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type outline))
+        )
+        (rectangle (start -1.5748 1.1938) (end 1.4732 0.6858)
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy 0 0.762)
+            (xy 0 0)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.778)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.508 3.429)
+            (xy 1.524 3.429)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 3.937)
+            (xy 1.016 2.921)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+      (symbol "Battery_Cell_1_1"
+        (pin passive line (at 0 5.08 270) (length 2.54)
+          (name "+" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -2.54 90) (length 2.54)
+          (name "-" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (global_label "GND" (shape input) (at 39.37 143.51 270) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 84f2ad5c-d152-445e-a7aa-9d4631eecac2)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 39.2906 149.7936 90)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "VCC" (shape input) (at 39.37 135.89 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c96ad8f7-d1d1-4065-9baf-198e97b1352f)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 39.2906 129.8483 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+
+  (symbol (lib_id "Device:Battery_Cell") (at 39.37 140.97 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 135c29c7-66f3-4799-9d85-30447f5c0522)
+    (property "Reference" "BT1" (id 0) (at 43.18 137.6679 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Battery_Cell" (id 1) (at 43.18 140.2079 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Battery:BatteryHolder_Keystone_1058_1x2032" (id 2) (at 39.37 139.446 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 39.37 139.446 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6509faf6-1932-4a05-937f-d9fa0a1629da))
+    (pin "2" (uuid 88476138-3ded-4644-b39d-e4e08664e937))
+  )
+
+  (sheet (at 20.32 24.13) (size 44.45 31.75) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7eaae2d7-b4ad-4554-8c8a-2037170131bd)
+    (property "Sheet name" "NRF52811" (id 0) (at 20.32 23.4184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "nrf52811_default.kicad_sch" (id 1) (at 20.32 56.4646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 115.57 24.13) (size 43.18 31.75) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid a1007db8-59b6-4ff5-a49f-e60c02cf7716)
+    (property "Sheet name" "MCP9700 Temperature" (id 0) (at 115.57 23.4184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "mcp9700_temp.kicad_sch" (id 1) (at 115.57 56.4646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 69.85 24.13) (size 41.91 31.75) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid ef3bcccf-ae5e-4054-a9c6-4ecc26db9104)
+    (property "Sheet name" "Microphone" (id 0) (at 69.85 23.4184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "microphone_sheet.kicad_sch" (id 1) (at 69.85 56.4646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 162.56 24.13) (size 38.1 31.75) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid fde6b098-bde3-47e3-b5cf-770cb4a17962)
+    (property "Sheet name" "PIR Sensor" (id 0) (at 162.56 23.4184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "LHI778_default.kicad_sch" (id 1) (at 162.56 56.4646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd" (page "2"))
+    (path "/ef3bcccf-ae5e-4054-a9c6-4ecc26db9104" (page "3"))
+    (path "/a1007db8-59b6-4ff5-a49f-e60c02cf7716" (page "4"))
+    (path "/fde6b098-bde3-47e3-b5cf-770cb4a17962" (page "5"))
+  )
+
+  (symbol_instances
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/a0a4b1f4-aaf9-4a9e-a64f-da891e320f1e"
+      (reference "AE1") (unit 1) (value "Antenna_Chip") (footprint "RF_Antenna:Johanson_2450AT18x100")
+    )
+    (path "/135c29c7-66f3-4799-9d85-30447f5c0522"
+      (reference "BT1") (unit 1) (value "Battery_Cell") (footprint "Battery:BatteryHolder_Keystone_1058_1x2032")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/af652b91-97e9-4320-8bf6-03f86cd36923"
+      (reference "C1") (unit 1) (value "18pF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/bd04df70-e29d-4fe2-82cf-fd00ecc54811"
+      (reference "C2") (unit 1) (value "18pF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/e1408cdc-da15-4065-9ba4-4f1265c92f6a"
+      (reference "C3") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/1f2063bc-730a-4eaa-8f13-6431a1b0d2ff"
+      (reference "C4") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/fad554c4-d799-4921-8c07-ec150530906f"
+      (reference "C5") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/d7b48dd9-383b-4e6a-86b9-41a599981597"
+      (reference "C6") (unit 1) (value "0.8pF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/ef3bcccf-ae5e-4054-a9c6-4ecc26db9104/833cb14b-5451-4de1-88fa-8d976e13b5f1"
+      (reference "C7") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/0acd43d5-b892-4127-995f-7be9ed5706d8"
+      (reference "C8") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/09cbdff2-ab63-49af-84c1-4a4535b0d629"
+      (reference "C9") (unit 1) (value "100pF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/8076f56d-080a-4dbb-a09e-6916a73ecc3a"
+      (reference "C10") (unit 1) (value "N.C") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/d115f777-0b7f-4946-98b4-00ccacbd4101"
+      (reference "C11") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/843d2769-e7c8-4ea1-8ce3-d72a600651f5"
+      (reference "L1") (unit 1) (value "10uH") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/d7e752d6-b02d-46a5-9855-b85d5da578e7"
+      (reference "L2") (unit 1) (value "3.9nH") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/1d494f08-d012-4236-b15b-c2bb248f8d8b"
+      (reference "L3") (unit 1) (value "15nH") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/ef3bcccf-ae5e-4054-a9c6-4ecc26db9104/c1c80ddb-5876-4cb3-8b9e-6d379c2a4fc6"
+      (reference "MIC1") (unit 1) (value "INMP441ACEZ") (footprint "Footprints:INMP441ACEZ")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/9047e789-8dce-4172-b9da-30d726e9a67e"
+      (reference "P1") (unit 1) (value "Conn_01x01_Male") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/77e52a97-7c76-45af-9aff-27c99bbd1bc2"
+      (reference "P2") (unit 1) (value "Conn_01x01_Male") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/42261b68-8a6e-49a9-9a39-27bb26ff922f"
+      (reference "P3") (unit 1) (value "Conn_01x01_Male") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/0f537a42-ac26-4833-8ae0-e9e36bbadbc7"
+      (reference "P4") (unit 1) (value "Conn_01x01_Male") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/cdfc7ba2-f135-4674-b890-0842dd146fcf"
+      (reference "P5") (unit 1) (value "Conn_01x01_Male") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/a1007db8-59b6-4ff5-a49f-e60c02cf7716/badf000d-d32d-4edd-9d0a-74f8c6e399e5"
+      (reference "Q1") (unit 1) (value "MMBT3904") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/fde6b098-bde3-47e3-b5cf-770cb4a17962/e5175e3b-01ed-444d-8773-eca3590f242a"
+      (reference "Q2") (unit 1) (value "MMBT3904") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/652ffca9-4492-497f-848f-064b24eb74b2"
+      (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/ef3bcccf-ae5e-4054-a9c6-4ecc26db9104/505b94cc-f12f-401c-ae7e-6b84a5c01df6"
+      (reference "R2") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/a1007db8-59b6-4ff5-a49f-e60c02cf7716/0381b35b-f354-47d9-8171-23b2631ffc7a"
+      (reference "R3") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/a1007db8-59b6-4ff5-a49f-e60c02cf7716/199f9025-48ad-439c-a774-96e39ed002c8"
+      (reference "R4") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/fde6b098-bde3-47e3-b5cf-770cb4a17962/98d34c4d-846e-435c-b458-9af2c0d021be"
+      (reference "R5") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/fde6b098-bde3-47e3-b5cf-770cb4a17962/a81b8360-ad52-41a2-acbf-8e9ea8279ecc"
+      (reference "R6") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/1574077f-18fe-4261-bf88-f2d29ff8ea6e"
+      (reference "U1") (unit 1) (value "NRF52811-QFAA-R") (footprint "Footprints:QFN40P600X600X90-49N")
+    )
+    (path "/a1007db8-59b6-4ff5-a49f-e60c02cf7716/5c9e0013-ac77-4019-b011-e857720d1352"
+      (reference "U2") (unit 1) (value "MCP9700AT-ETT") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/fde6b098-bde3-47e3-b5cf-770cb4a17962/60d937d3-cdd6-4637-8e38-4edac19cd405"
+      (reference "U3") (unit 1) (value "DIP-MOTION/POSITION-LHI778(3P-D8.1MM)") (footprint "Footprints:SNR3-D8.1XH4.2MM")
+    )
+    (path "/7eaae2d7-b4ad-4554-8c8a-2037170131bd/91272719-670e-4cd0-9972-4be32ab8d17e"
+      (reference "Y1") (unit 1) (value "Crystal_GND24") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")
+    )
+  )
+)

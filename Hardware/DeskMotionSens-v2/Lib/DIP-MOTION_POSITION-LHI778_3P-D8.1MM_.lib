@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# DIP-MOTION/POSITION-LHI778(3P-D8.1MM)
+#
+DEF DIP-MOTION/POSITION-LHI778(3P-D8.1MM) U 0 40 Y Y 1 L N
+F0 "U" -250 250 50 H V L BNN
+F1 "DIP-MOTION/POSITION-LHI778(3P-D8.1MM)" 0 250 50 H V L BNN
+F2 "SNR3-D8.1XH4.2MM" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "LHI778" 0 0 50 H I L BNN "MPN"
+DRAW
+P 2 0 0 6 150 200 150 100 N
+P 2 0 0 6 -200 100 200 100 N
+P 2 0 0 6 200 100 200 50 N
+P 2 0 0 6 200 50 -200 50 N
+P 2 0 0 6 -200 50 -200 100 N
+S -200 117 100 217 0 0 6 f
+X D 1 150 -150 200 U 40 40 0 0 B 
+X G 3 -150 -150 200 U 40 40 0 0 B 
+X S 2 0 -150 200 U 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

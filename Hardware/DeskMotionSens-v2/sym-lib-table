@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "DIP-MOTION_POSITION-LHI778_3P-D8.1MM_")(type "Legacy")(uri "${KIPRJMOD}/Lib/DIP-MOTION_POSITION-LHI778_3P-D8.1MM_.lib")(options "")(descr ""))
+  (lib (name "INMP441ACEZ")(type "Legacy")(uri "${KIPRJMOD}/Lib/INMP441ACEZ.lib")(options "")(descr ""))
+  (lib (name "NRF52811-QFAA-R")(type "Legacy")(uri "${KIPRJMOD}/Lib/NRF52811-QFAA-R.lib")(options "")(descr ""))
+)
